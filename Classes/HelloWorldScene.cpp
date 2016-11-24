@@ -684,10 +684,10 @@ void PlayGame::findMinPath(int fr, int fc, int er, int ec)
 		{
 			if(pr[i] == -1 && pc[i] == -1)
 				break;
-			if(pc[i]+1 < 19 && pathpan[pr[i]][pc[i]+1] == 0)									   6
+			if(pc[i]+1 < 19 && pathpan[pr[i]][pc[i]+1] == 0)									
 			{							
-				pathpan[pr[i]][pc[i]+1] = weight;													4	0	1	
-				if(pr[i]==er && pc[i]+1==ec)														  3   2
+				pathpan[pr[i]][pc[i]+1] = weight;												
+				if(pr[i]==er && pc[i]+1==ec)													
 				{
 					success = true;
 					return;
@@ -813,7 +813,7 @@ void PlayGame::ccTouchesBegan(cocos2d::CCSet *pTouches, cocos2d::CCEvent *pEvent
 		}else
 		{
 			this->seleditem = 0;
-			for(int i=0; i<sizeof(PlayGame::pantemp[0])/sizeof(int)/(sizeof(PlayGame::pantemp[0][0])/sizeof(int)); i++)	//경로찾기초기화
+			for(int i=0; i<sizeof(PlayGame::pantemp[0])/sizeof(int)/(sizeof(PlayGame::pantemp[0][0])/sizeof(int)); i++)
 			{
 				for(int j=0; j<sizeof(PlayGame::pantemp[0][0])/sizeof(int); j++)
 				{
